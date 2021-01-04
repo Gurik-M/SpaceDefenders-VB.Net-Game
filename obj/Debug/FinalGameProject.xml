@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FinalGameProject
+</name>
+</assembly>
+<members>
+<member name="T:FinalGameProject.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FinalGameProject.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FinalGameProject.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:FinalGameProject.Body.GetAnimationDelay">
+ <summary>
+ Number of frames between animating this Body.
+ </summary>
+ <returns>Negative numbers mean animation is disabled</returns>
+</member>
+<member name="M:FinalGameProject.Body.Collission(FinalGameProject.Body,System.Int32,System.Int32)">
+ <summary>
+ Gets called before you Move() into a location that has a Body there already.
+ In this project, we'll use Look-Ahead collission detection. The Body that is moving 
+ is responsible for not ruining the playability of your game.
+ </summary>
+ <returns>False if the move should be blocked, True if it should be allowed</returns>
+</member>
+<member name="M:FinalGameProject.GameEngine.Search(System.Int32,System.Int32)">
+ <summary>
+ TODO #7 Search through your layers, in order from top to bottom, and return all of the Bodies that you find at that (x,y) location
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:FinalGameProject.PictureBoxConsumer.CalcFps(System.Double)">
+ <summary>
+  Calculates the average frame rate over the last NUM_FRAMES displayed
+ </summary>
+ <param name="newTick"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

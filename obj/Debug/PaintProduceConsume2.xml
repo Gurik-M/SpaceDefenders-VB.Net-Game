@@ -1,0 +1,43 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PaintProduceConsume2
+</name>
+</assembly>
+<members>
+<member name="T:PaintProduceConsume2.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PaintProduceConsume2.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PaintProduceConsume2.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:PaintProduceConsume2.GameStatus.setHit(System.Int32,System.Int32,System.Char,System.Char,System.Collections.Generic.HashSet{System.Int32},System.Int32)">
+ <summary>
+ Makes all neighbouring cells to (x,y) with the same target character into hits
+ Must change to Hit before the recursion calls, or you'll get a infinite loop
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="target"></param>
+ <param name="columns">the x-coordinates of the columns that found a hit</param>
+</member>
+<member name="M:PaintProduceConsume2.PictureBoxConsumer.calcFps(System.Double)">
+ <summary>
+  Calculates the average frame rate over the last NUM_FRAMES displayed
+ </summary>
+ <param name="newTick"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>
